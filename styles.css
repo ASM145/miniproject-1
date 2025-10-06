@@ -1,0 +1,136 @@
+
+    body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(270deg, #ff00cc, #333399);
+  background-size: 400% 400%;
+  animation: gradientScroll 10s ease infinite;
+  color: #fff;
+  font-family:'arial'
+}
+
+@keyframes gradientScroll {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  gap: 15px;                
+  margin-top: 30px;
+}
+
+.icon {
+        cursor: pointer;
+        background-color: transparent;
+        border: 2px solid #0ff;
+        border-color: white;
+        width: 60px;
+        height: 60px;
+        border-radius: 60px;
+        margin-right: 15px;
+        transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.15);
+}
+
+
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  animation: subtleGlow 3s ease-in-out infinite;
+}
+
+@keyframes subtleGlow {
+  0%, 100% {
+    text-shadow:
+      0 0 4px rgba(255, 255, 255, 0.3),
+      0 0 8px rgba(255, 255, 255, 0.15);
+  }
+  50% {
+    text-shadow:
+      0 0 7px rgba(255, 255, 255, 0.5),
+      0 0 14px rgba(255, 255, 255, 0.3);
+  }
+}
+     
+   
+      .move-icon{
+        height: 50px;
+      }
+    
+      .button1{
+        cursor: pointer;
+        background-color: transparent;
+        border: 2px solid #0ff;
+        border-color: white;
+        width: 120px;
+        height: 120px;
+        border-radius: 60px;
+        box-shadow: 0 0 5px #0ff, 0 0 20px #0ff;
+        margin-right: 15px;
+        margin-top: 40px;
+
+      }
+      @keyframes glow {
+        0% {
+          box-shadow: 0 0 5px #0ff, 0 0 20px #0ff;
+        }
+        100% {
+          box-shadow: 0 0 20px #0ff, 0 0 40px #0ff;
+      }
+      }
+      .result{
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 50px;
+      }
+      .score{
+        margin-top: 60px;
+      }
+      .reset , .auto-play-button{
+        background: transparent;
+        color: white;
+        border: 2px solid white;
+        border-radius: 50px;
+        padding: 10px 30px;
+        font-size: 1.2rem;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        transition: color 0.3s ease;
+        margin-top: 60px;
+}
+
+.reset::before {
+        content: "";
+        position: absolute;
+        top: 0; left: -100%;
+        width: 100%;
+        height: 100%;
+        border: 2px solid white;
+        transition: left 0.3s ease;
+        border-radius: 50px;
+        pointer-events: none;
+}
+
+      .reset:hover {
+        color: #222;
+        background: white;
+      }
+
+      .reset:hover::before {
+        left: 0;
+      }
+      .container{
+        text-align: center;
+      }
+ 
